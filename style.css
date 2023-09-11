@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.ofertas, .logo-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8vw;
+}
+
+.ofertas{
+    display: none;
+}
+
+.ofertas, select{
+    background-color: black;
+    color: white;
+}
+
+.ofertas select{
+    border: none;
+}
+
+.logo-menu{
+    background-color: #F0A83E;
+    padding: 4vh 8vw;
+  
+}
+
+.logo span{
+    font-weight: 700;
+}
+
+.logo .title-front{
+    color: #fff;
+}
+
+.logo, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu{
+    display: none;
+}
+
+/* main */
+.contenedor-banner{
+    height: 86vh;
+    background-image: url('./img/bowl-pet-movile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.publicidad-comedores{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.saludo-bienvenido{
+ background-color: white;
+ align-self: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.btn-comedores{
+    background-color: #F0A83E;
+    color: wheat;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Products */
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.products h2{
+    color: #3C2313;
+    padding: 15px 0;
+}
+
+.second-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.second-menu a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-detail .price{
+    color: #F0A83E;
+}
+
+/* Form Contact */
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.form-contact div{
+    margin: 30px;
+}
+
+.form-contact h2{
+    color: #3C2313;
+    padding: 15px;
+}
+
+.contact-form input{
+    display: block;
+    border-radius: 20px;
+    padding: 7px;
+    width: 300px;
+    margin: 5px 0;
+    background-color: #3C2313;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 10px;
+    width: 285px;
+    
+}
+
+.btn-form{
+    border-radius: 25px;
+    padding: 10px;
+    width: 50%;
+    color: #fff;
+    background-color: #8A8787;
+    border:none;
+}
+
+.btn-two{
+    background-color: #F0A83E;
+}
+
+/* SUBCRIPTION */
+.subcription{
+    display: block;
+    background-color: #F0A83E;
+    color: #fff;
+    padding: 5px;
+}
+
+.title-subcription{
+    display: flex;
+    gap: 70px;
+    padding: 5px 10px;
+}
+
+.title-subcription .fa-regular {
+    font-size: 20px;
+}
+.title-subcription span{
+    font-weight: 700;
+}
+
+.subcription form{
+    margin: 5px 10px;
+}
+
+.subcription form input{
+    border-radius: 20px;
+    padding: 7px;
+    width: 250px;
+    border: none;
+    margin: 5px;
+}
+
+.subcription form button{
+    border-radius: 25px;
+    padding: 10px;
+    color: #fff;
+    background-color: #3C2313;
+    border: none;
+}
+
+/* Footer */
+.contact-section{
+ background-color: #3C2313;
+}
+
+
+
+
+/* Media Query */
+@media (min-width:768px){
+    
+    /* Main Menu */
+    .menu .icon-burguer-menu{
+       display: none;
+    }
+
+    .main-menu{
+        width: 325px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .main-menu li{
+      list-style: none;
+      
+    }
+
+    .main-menu li a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Hero */
+    .contenedor-banner{
+       height: 100vh;
+      background-image: url('./img/bowl-and-pet-daities-on-green-background\ 1.png');
+
+    }
+
+    .publicidad-comedores{
+        width: 800px;
+        padding: 15px;
+     
+    }
+
+    .saludo-bienvenido{
+        align-self: self-end;
+    }
+
+    /* Card Products */
+    .card-products{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Subcription */
+    .subcription{
+     display: flex;
+    justify-content: space-between;
+
+    }
+
+    .title-subcription{
+        display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    
+    }
+}
