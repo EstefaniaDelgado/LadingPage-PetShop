@@ -9,29 +9,28 @@
 }
 
 /* header */
-.ofertas, .logo-menu{
+.offers, .logo-menu{
     display: flex;
     justify-content: space-between;
     padding: 0 8vw;
 }
 
-.ofertas{
+.offers{
     display: none;
 }
 
-.ofertas, select{
+.offers, select{
     background-color: black;
     color: white;
 }
 
-.ofertas select{
+.offers select{
     border: none;
 }
 
 .logo-menu{
     background-color: #F0A83E;
     padding: 4vh 8vw;
-  
 }
 
 .logo span{
@@ -51,6 +50,7 @@
 .main-menu{
     display: none;
 }
+
 
 /* main */
 .contenedor-banner{
@@ -220,14 +220,59 @@
 
 /* Footer */
 .contact-section{
- background-color: #3C2313;
+    background-color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
+.contact-section .logo span{
+    color: #fff;
+}
 
+.contact-section .logo .title-front-footer{
+    color: #F0A83E;
+}
 
+.location, .phone-number, .email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.contact-section h4{
+    color: #fff;
+    font-size: 18px; 
+}
+
+.contact-section p{
+    color: #8A8787;
+}
+
+.contact-icon{
+    background-color: #8A8787;
+    border: 8px solid #666666;
+    border-radius: 35px;
+    padding: 5px;
+}
+
+.rights{
+    background-color:#101210;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
 
 /* Media Query */
 @media (min-width:768px){
+   /* header */
+   .offers{
+    display: flex;
+   }
     
     /* Main Menu */
     .menu .icon-burguer-menu{
@@ -235,11 +280,16 @@
     }
 
     .main-menu{
-        width: 325px;
+        width: 365px;
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
     }
+     
+    .anchor-main-menu::before{
+        content: url('./img/pawprint\ 1.png');
+        padding: 5px;
+    }
+
 
     .main-menu li{
       list-style: none;
@@ -287,5 +337,16 @@
     align-items: center;
     gap: 5px;
     
+    }
+
+    /* Contact Section */
+    .contact-section{
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .contact-section .logo{
+        position: absolute;
+        left: 76%;
     }
 }
