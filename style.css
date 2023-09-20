@@ -22,6 +22,7 @@
 .offers, select{
     background-color: black;
     color: white;
+    font-size: 1rem;
 }
 
 .offers select{
@@ -35,6 +36,7 @@
 
 .logo span{
     font-weight: 700;
+    font-size: 25px;
 }
 
 .logo .title-front{
@@ -272,6 +274,9 @@
    /* header */
    .offers{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px
    }
     
     /* Main Menu */
@@ -309,13 +314,13 @@
     }
 
     .publicidad-comedores{
-        width: 800px;
-        padding: 15px;
-     
+        width: 95%;    
     }
 
     .saludo-bienvenido{
         align-self: self-end;
+        text-align: center;
+        font-size: 2rem;
     }
 
     /* Card Products */
