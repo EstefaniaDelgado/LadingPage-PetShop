@@ -98,7 +98,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+     
+    /* margin: 20px; */
 }
 
 .products h2{
@@ -314,6 +315,10 @@
         color: #FFFFFF;
     }
 
+    h2{
+        font-size: 2rem;
+    }
+
     /* Hero */
     .contenedor-banner{
        height: 100vh;
@@ -335,6 +340,7 @@
     .card-products{
         display: flex;
         flex-direction: row;
+        gap: 20px;
     }
 
     /* Subcription */
